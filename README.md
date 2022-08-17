@@ -37,3 +37,8 @@ yarn run cypress open
 
 ## Setup github action
 1. Create an action at [./.github/workflows/test.yml](./github/workflows/test.yml) according to https://github.com/cypress-io/github-action
+
+## POC
+1. git push to remote
+2. Go to https://github.com/danielkwok21/learnMonorepoCypress/actions
+3. Observe job being ran that runs cypress test
