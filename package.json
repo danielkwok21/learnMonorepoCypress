@@ -1,0 +1,17 @@
+{
+  "name": "learn-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "start": "yarn workspace server start | yarn workspace client start"
+  },
+  "dependencies": {
+    "cypress": "^10.6.0"
+  }
+}

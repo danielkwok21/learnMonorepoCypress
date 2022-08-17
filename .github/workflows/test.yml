@@ -1,0 +1,16 @@
+name: End-to-end tests
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        
+        # Start server & client
+        # https://github.com/cypress-io/github-action#start-server
+        with:
+            start: yarn start
